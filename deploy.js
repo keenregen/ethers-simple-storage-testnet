@@ -1,15 +1,12 @@
-// solidity is synchronous (line by line generally)
-// js is async
-// // promise in async technique : pending, fullfilled, rejected
+// ethers.js with testnet
 
 // dependencies
 const ethers = require("ethers");
 const fs = require("fs");
 require("dotenv").config();
 
-// aync function main() {}
+// main function
 const main = async () => {
-  // endpoint to connect: http://127.0.0.1:8545
   const provider = new ethers.providers.JsonRpcProvider(process.env.rpcPoint);
 
   const wallet = new ethers.Wallet(process.env.privateKey, provider);
