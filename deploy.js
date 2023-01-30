@@ -29,7 +29,7 @@ const main = async () => {
   let currentFavNum = await contract.retrieve();
   console.log(`Current Fav Number: ${currentFavNum.toString()}`);
   // store a new fav num
-  const storeResp = await contract.store("33");
+  const storeResp = await contract.store("41");
   const receipt2 = await contract.deployTransaction.wait();
   currentFavNum = await contract.retrieve();
   console.log(`The Fav Number now: ${currentFavNum.toString()}`);
