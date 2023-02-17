@@ -1,3 +1,3 @@
 # Ethers.js Study 2
 
-## SimpleStorage for TestNet
+## SimpleStorage Contract with Ethers.js for TestNet
